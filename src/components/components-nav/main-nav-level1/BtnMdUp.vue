@@ -44,9 +44,10 @@ export default {
       var isActive = this.$route.path === this.item.link_url
 
       if (!isActive) {
-        isActive = this.item.route_match_values.includes(this.$route.name)
+        let rmv = this.item.route_match_values || []
+        isActive = rmv.includes(this.$route.name)
         if (this.item.route_match_key === "param_preamble") {
-          isActive = this.item.route_match_values.includes(this.$route.params.preamble)
+          isActive = rmv.includes(this.$route.params.preamble)
           var routeMatchKey = this.$route
         }
       }
