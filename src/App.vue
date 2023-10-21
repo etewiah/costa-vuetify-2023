@@ -7,7 +7,7 @@
   >
     <v-main>
       <v-container fluid class="main-app-ct mt-0 pb-0 pl-0 pr-0 pt-0 elevation-0">
-        <!-- <MainNav :navLinks="topNavLinks"></MainNav> -->
+        <MainNav :navLinks="topNavLinks"></MainNav>
         <div v-if="showBreadcrumbs" class="container py-3">
           <div class="layout row wrap">
             <div class="flex main-content breadcrumbs-cntnr xs12">
@@ -37,20 +37,20 @@
   </v-app>
 </template>
 <script>
-// import MainNav from '@jsroot/theme-marbella/components-nav/MainNav'
+import MainNav from '@/components/components-nav/MainNav'
 // // import PageTopHeader from '@/components-nav/PageTopHeader'
-// // import PageFooter from '@jsroot/theme-marbella/components/PageFooter'
+// // import PageFooter from '@/components/components/PageFooter'
 // import PageNotFound from '@/components/PageNotFound'
-// import ZohoWidget from '@jsroot/theme-marbella/components/ZohoWidget'
+// import ZohoWidget from '@/components/components/ZohoWidget'
 
 export default {
   components: {
     // ZohoWidget,
     // PageNotFound,
-    // MainNav,
+    MainNav,
     // PageFooter: () =>
     //   import(
-    //     /* webpackMode: "lazy" */ /* webpackChunkName: "footer" */ '@jsroot/theme-marbella/components/PageFooter'
+    //     /* webpackMode: "lazy" */ /* webpackChunkName: "footer" */ '@/components/components/PageFooter'
     //   ),
     // PageTopHeader
   },
