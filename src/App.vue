@@ -5,7 +5,7 @@
     v-cloak
     light
   >
-    <v-content>
+    <v-main>
       <v-container fluid class="main-app-ct mt-0 pb-0 pl-0 pr-0 pt-0 elevation-0">
         <!-- <MainNav :navLinks="topNavLinks"></MainNav> -->
         <div v-if="showBreadcrumbs" class="container py-3">
@@ -20,7 +20,7 @@
         </div>
         <router-view v-else></router-view>
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer
       v-if="$store.state.coreStore.showBelowFold"
       :fixed="false"
