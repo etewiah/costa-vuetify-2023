@@ -17,13 +17,13 @@
               </v-layout>
               <p v-if="clientFormErrors.length">
                 <template v-for="(error,index) in clientFormErrors">
-                  <v-alert :key="index" outline color="error" icon="warning" :value="true">
+                  <v-alert :key="index" outlined color="error" icon="warning" :value="true">
                     {{error}}
                   </v-alert>
                 </template>
               </p>
               <p v-if="clientFormSuccess.length">
-                <v-alert outline color="success" dismissible v-model="successModel">
+                <v-alert outlined color="success" dismissible v-model="successModel">
                   {{ clientFormSuccess }}
                 </v-alert>
               </p>

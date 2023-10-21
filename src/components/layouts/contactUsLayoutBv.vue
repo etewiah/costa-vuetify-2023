@@ -31,12 +31,12 @@ style="display:none" contain aspect-ratio="1" width="175" class="logo-contact"><
               Costa (Málaga)</p>
           </v-card-text>
           <v-card-actions>
-            <v-btn style="" outline block large color="#F7A100" dark>
+            <v-btn style="" outlined block large color="#F7A100" dark>
               <v-icon>phone</v-icon> <a href="tel:+34 951 484 500">+34 951 484 500</a>
             </v-btn>
           </v-card-actions>
           <v-card-actions>
-            <v-btn flat small color="#F7A100">{{ $ft("client_shared.labels.mailUs") }}</v-btn> | <v-btn flat small color="#F7A100" href="mailto:info@costaspecialist.com">info@costaspecialist.com</v-btn>
+            <v-btn text small color="#F7A100">{{ $ft("client_shared.labels.mailUs") }}</v-btn> | <v-btn text small color="#F7A100" href="mailto:info@costaspecialist.com">info@costaspecialist.com</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>

@@ -31,41 +31,41 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import UsersPage from '@jsroot/shared/pages/UsersPage'
-// import HomePage from '@jsroot/theme-marbella/pages/HomePage'
+// import HomePage from '../pages/HomePage'
 import HomePage from '../pages/HomePage.vue'
 // const BlogPostPage = () =>
 //   import(
-//     /* webpackChunkName: "route-blogpost" */ '@jsroot/theme-marbella/pages/BlogPostPage'
+//     /* webpackChunkName: "route-blogpost" */ '../pages/BlogPostPage'
 //   )
 // const FavouritesIndex = () =>
 //   import(
 //     /* webpackChunkName: "route-favs" */ '@jsroot/theme-marbella/components-visitor/FavouritesIndex'
 //   )
-// // const ResalesCitySearch = () => import( /* webpackChunkName: "route-resalesCitySearch" */ '@jsroot/theme-marbella/pages/ResalesCitySearch')
+// // const ResalesCitySearch = () => import( /* webpackChunkName: "route-resalesCitySearch" */ '../pages/ResalesCitySearch')
 // const ResalesRentalSearch = () =>
 //   import(
-//     /* webpackChunkName: "route-ResalesRentalSearch" */ '@jsroot/theme-marbella/pages/ResalesRentalSearch'
+//     /* webpackChunkName: "route-ResalesRentalSearch" */ '../pages/ResalesRentalSearch'
 //   )
-// const ResalesSearch = () =>
-//   import(
-//     /* webpackChunkName: "route-resalesSearch" */ '@jsroot/theme-marbella/pages/ResalesSearch'
-//   )
+const ResalesSearch = () =>
+  import(
+    /* webpackChunkName: "route-resalesSearch" */ '../pages/ResalesSearch'
+  )
 // const ResalesDetails = () =>
 //   import(
-//     /* webpackChunkName: "route-resalesDetails" */ '@jsroot/theme-marbella/pages/ResalesDetails'
+//     /* webpackChunkName: "route-resalesDetails" */ '../pages/ResalesDetails'
 //   )
 // const PromotionsSearch = () =>
 //   import(
-//     /* webpackChunkName: "route-promotionsSearch" */ '@jsroot/theme-marbella/pages/PromotionsSearch'
+//     /* webpackChunkName: "route-promotionsSearch" */ '../pages/PromotionsSearch'
 //   )
 // const PromotionDetails = () =>
 //   import(
-//     /* webpackChunkName: "route-promotionsDetails" */ '@jsroot/theme-marbella/pages/PromotionDetails'
+//     /* webpackChunkName: "route-promotionsDetails" */ '../pages/PromotionDetails'
 //   )
 // // // const GenericContainer = () => import('@jsroot/theme-vienna/pages/GenericContainer')
 // const BlogIndex = () =>
 //   import(
-//     /* webpackChunkName: "route-blogIndex" */ '@jsroot/theme-marbella/pages/BlogIndex'
+//     /* webpackChunkName: "route-blogIndex" */ '../pages/BlogIndex'
 //   )
 const StdPageContainer = () =>
   import(
@@ -98,11 +98,11 @@ const router = new Router({
       name: 'homePage',
       component: HomePage
     },
-    // {
-    //   path: '/:locale(en|es|nl|fr|it)',
-    //   name: 'landing',
-    //   component: HomePage
-    // },
+    {
+      path: '/:locale(en|es|nl|fr|it)',
+      name: 'landing',
+      component: HomePage
+    },
     // // Oct 2020 - collections for costa
     // {
     //   path: '/:locale(en|es|nl|fr|it)/collections/:pageSlug',
@@ -180,11 +180,11 @@ const router = new Router({
     // //   component: SaleListingDetails,
     // // },
 
-    // {
-    //   path: '/:locale(en|es|nl|fr|it)/s/:preamble',
-    //   name: 'resalesSearch',
-    //   component: ResalesSearch
-    // },
+    {
+      path: '/:locale(en|es|nl|fr|it)/s/:preamble',
+      name: 'resalesSearch',
+      component: ResalesSearch
+    },
     // {
     //   path: '/:locale(en|es|nl|fr|it)/aaa123/:preamble',
     //   name: 'resalesRentalSearch',
