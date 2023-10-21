@@ -67,10 +67,10 @@ import HomePage from '../pages/HomePage.vue'
 //   import(
 //     /* webpackChunkName: "route-blogIndex" */ '@jsroot/theme-marbella/pages/BlogIndex'
 //   )
-// const StdPageContainer = () =>
-//   import(
-//     /* webpackChunkName: "route-stdPage" */ '@jsroot/shared/components-pages/StdPageContainer'
-//   )
+const StdPageContainer = () =>
+  import(
+    /* webpackChunkName: "route-stdPage" */ '@/components/components-pages/StdPageContainer'
+  )
 // const AreaPage = () => import('@jsroot/shared/components-pages/AreaPage')
 // const CollectionPage = () =>
 //   import('@jsroot/shared/components-pages/CollectionPage')
@@ -141,12 +141,12 @@ const router = new Router({
     //   name: 'favouritesIndexPage',
     //   component: FavouritesIndex
     // },
-    // {
-    //   path: '/:locale(en|es|nl|fr|it)/p/:pageName',
-    //   name: 'standardPageDetails',
-    //   // component: StandardPage
-    //   component: StdPageContainer
-    // },
+    {
+      path: '/:locale(en|es|nl|fr|it)/p/:pageName',
+      name: 'standardPageDetails',
+      // component: StandardPage
+      component: StdPageContainer
+    },
     // {
     //   path: '/:locale(en|es|nl|fr|it)/blog-posts/s/:pageName',
     //   name: 'blogPage',
