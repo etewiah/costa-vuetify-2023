@@ -10,13 +10,13 @@
         <!-- >changed -->
         <v-flex xs12 px-3 style="margin-top: 10%">
           <div style v-html="preRen" v-if="preRen"></div>
-          <v-card v-else class="home-search semidark-background px-4" flat dark>
+          <v-card v-else class="home-search semidark-background px-4" text dark>
             <!-- >changed -->
             <v-container px-2 pt-4 pb-1>
               <!-- >changed -->
               <v-layout>
                 <v-card-title
-                  flat
+                  text
                   class="headline font-weight-regular white--text pa-0"
                 >{{ $ft('client_shared.labels.searchTrough') }}</v-card-title>
               </v-layout>
@@ -91,7 +91,7 @@
                   </template>
                   <v-spacer></v-spacer>
                   <v-flex xs12 md2 xl1 px-0>
-                    <v-btn block flat v-on:click="showAdvSearch = !showAdvSearch">
+                    <v-btn block text v-on:click="showAdvSearch = !showAdvSearch">
                       {{ $ft('client_shared.labels.advSearch') }}
                       <v-icon>chevron_right</v-icon>
                     </v-btn>
