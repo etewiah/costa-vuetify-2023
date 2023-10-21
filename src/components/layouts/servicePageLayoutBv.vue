@@ -21,7 +21,7 @@ style="display:none" contain aspect-ratio="1" width="175" class="logo-contact"><
   </v-container>
 </template>
 <script>
-import ServicesWideEnquiryForm from '@jsroot/theme-marbella/components-forms/ServicesWideEnquiryForm'
+import ServicesWideEnquiryForm from '@/components/components-forms/ServicesWideEnquiryForm'
 export default {
   components: {
     ServicesWideEnquiryForm,

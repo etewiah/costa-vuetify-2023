@@ -217,17 +217,19 @@ const actions = {
   //   })
   // },
   loadSettings: function ({ commit }) {
-    // TODO oct 2019 - check for translations on INMOAPP
-    // object before making axios call below
-    // (Though all of this could become redundant with kimaru 
-    // prerendering)
-    let apiUrl = this.getters.baseApiUrlV3 + '/client_settings'
-    apiPublicService().get(apiUrl).then((response) => {
-      // commit('setCrumbsHomeText', { result: response.data })
-      commit('setClientSettings', { result: response.data })
-    }, (err) => {
-      console.log(err)
-    })
+    commit('setClientSettings', { result: INMOAPP.clientSettings})
+    // Oct 2023 - will just use INMOAPP
+    // // TODO oct 2019 - check for translations on INMOAPP
+    // // object before making axios call below
+    // // (Though all of this could become redundant with kimaru 
+    // // prerendering)
+    // let apiUrl = this.getters.baseApiUrlV3 + '/client_settings'
+    // apiPublicService().get(apiUrl).then((response) => {
+    //   // commit('setCrumbsHomeText', { result: response.data })
+    //   commit('setClientSettings', { result: response.data })
+    // }, (err) => {
+    //   console.log(err)
+    // })
   }
 }
 

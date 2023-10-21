@@ -9,7 +9,7 @@
 //TODO - figure out some way of only including the correct components:
 import defaultPageLayout from '@/components/layouts/defaultPageLayout'
 // import pageWithFormLayout from '@/components/layouts/pageWithFormLayout'
-// import contactUsLayoutBv from '@/components/layouts/contactUsLayoutBv'
+import contactUsLayoutBv from '@/components/layouts/contactUsLayoutBv'
 // import aboutUsLayoutBv from '@/components/layouts/aboutUsLayoutBv'
 // import ourServicesLayoutBv from '@/components/layouts/ourServicesLayoutBv'
 // import servicePageLayoutBv from '@/components/layouts/servicePageLayoutBv'
@@ -32,7 +32,7 @@ export default {
     // servicePageLayoutBv,
     // ourServicesLayoutBv,
     // aboutUsLayoutBv,
-    // contactUsLayoutBv,
+    contactUsLayoutBv,
     defaultPageLayout,
     // pageWithFormLayout
   },
