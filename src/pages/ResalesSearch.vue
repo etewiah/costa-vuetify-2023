@@ -29,7 +29,7 @@
             ></SearchFiltersModal> -->
           </template>
           <template v-else>
-            <!-- <ResalesVertical
+            <ResalesVertical
               :isLoading="$store.state.resalesStore.loadingSearch"
               :searchSelectOptions="
                 $store.state.searchStore.searchSelectOptions
@@ -37,7 +37,7 @@
               :queryParams="queryParams"
               :searchFields="searchFields"
               @triggerSearchUpdate="triggerSearchUpdate"
-            ></ResalesVertical> -->
+            ></ResalesVertical>
           </template>
         </v-flex>
       </v-layout>
@@ -54,7 +54,7 @@
 <script>
 import _ from 'lodash'
 // import ResalesSearchResults from '@jsroot/theme-marbella/components-resales/ResalesSearchResults'
-// import ResalesVertical from '@/components-search/widgets/ResalesVertical'
+import ResalesVertical from '@/components/components-search/widgets/ResalesVertical'
 // import AlertsForm from '@/components-forms/AlertsForm'
 import ContentHtml from '@/components/general/ContentHtml'
 // import SearchFiltersModal from '@/components-search/widgets/SearchFiltersModal'
@@ -71,7 +71,7 @@ export default {
     // SearchFiltersModal,
     // AlertsForm,
     // ResalesSearchResults,
-    // ResalesVertical,
+    ResalesVertical,
     ContentHtml,
   },
   data() {
