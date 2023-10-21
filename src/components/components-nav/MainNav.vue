@@ -22,14 +22,14 @@
       >
         <img
           v-if="isHomePage"
-          src="@jsroot/images/costasp/COSTA SPECIALIST LOGO white.png"
+          src="@/assets/images/costasp/COSTA SPECIALIST LOGO white.png"
           class="mx-3 mt-3"
           contain
           height="48"
         />
         <img
           v-else
-          src="@jsroot/images/costasp/COSTA SPECIALIST LOGO white.png"
+          src="@/assets/images/costasp/COSTA SPECIALIST LOGO white.png"
           class="mx-3 mt-3"
           contain
           height="48"
@@ -84,7 +84,7 @@
             <router-link :to="{ name: 'homePage', params: {} }">
               <img
                 style="max-width: 80%"
-                src="@jsroot/images/costasp/COSTA SPECIALIST LOGO white.png"
+                src="@/assets/images/costasp/COSTA SPECIALIST LOGO white.png"
               />
             </router-link>
             <v-btn
@@ -209,7 +209,7 @@ export default {
     //   if (this.isHomePage) {
     //     return "https://i.imgur.com/JXaZBnU.png"
     //   } else {
-    //     return "~@jsroot/images/buenavista-logo-header.svg"
+    //     return "~@/assets/images/buenavista-logo-header.svg"
     // - couldn't get above which should server from webpacker
     // assets to work
     //     // return "/assets/images/buenavista-logo-header.svg"

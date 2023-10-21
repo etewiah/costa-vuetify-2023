@@ -222,7 +222,7 @@ export default {
 }
 
 .current-locale-flag {
-  /*background: url(~@jsroot/images/idiomas.png) -20px 0;*/
+  /*background: url(~@/assets/images/idiomas.png) -20px 0;*/
   display: block;
   width: 20px;
   height: 14px;
@@ -232,12 +232,12 @@ export default {
 }
 
 .current-locale-flag.es {
-  background: url('~@jsroot/images/idiomas.png') 0 0 no-repeat;
+  background: url('~@/assets/images/idiomas.png') 0 0 no-repeat;
 }
 
 .current-locale-flag.en,
 .current-locale-flag.uk {
-  background: url(~@jsroot/images/idiomas.png) -20px 0;
+  background: url(~@/assets/images/idiomas.png) -20px 0;
 }
 
 .dd-idiomas-title {

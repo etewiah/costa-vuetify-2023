@@ -141,7 +141,7 @@ export default {
 <style scoped>
 ul.idiomas li.selected,
 ul.idiomas li:hover {
-  background: url('~@jsroot/images/simple-nav-arrow.png') no-repeat top;
+  background: url('~@/assets/images/simple-nav-arrow.png') no-repeat top;
 }
 
 .ctd_idio_list_tile_title {
@@ -184,60 +184,60 @@ ul.idiomas .it {
 }
 
 ul.idiomas .es {
-  background: url('~@jsroot/images/idiomas.png') 0 0 no-repeat;
+  background: url('~@/assets/images/idiomas.png') 0 0 no-repeat;
 }
 
 ul.idiomas .en,
 ul.idiomas .uk {
-  background: url(~@jsroot/images/idiomas.png) -20px 0;
+  background: url(~@/assets/images/idiomas.png) -20px 0;
 }
 
 ul.idiomas .ru {
-  background: url('~@jsroot/images/idiomas.png') -40px 0;
+  background: url('~@/assets/images/idiomas.png') -40px 0;
 }
 
 ul.idiomas .sv {
-  background: url('~@jsroot/images/idiomas.png') -60px 0;
+  background: url('~@/assets/images/idiomas.png') -60px 0;
 }
 
 ul.idiomas .no {
-  background: url('~@jsroot/images/idiomas.png') -80px 0;
+  background: url('~@/assets/images/idiomas.png') -80px 0;
 }
 
 ul.idiomas .de {
-  background: url('~@jsroot/images/idiomas.png') -100px 0;
+  background: url('~@/assets/images/idiomas.png') -100px 0;
 }
 
 ul.idiomas .fr {
-  background: url('~@jsroot/images/idiomas.png') -120px 0;
+  background: url('~@/assets/images/idiomas.png') -120px 0;
 }
 
 ul.idiomas .ne {
-  background: url('~@jsroot/images/idiomas.png') -140px 0;
+  background: url('~@/assets/images/idiomas.png') -140px 0;
 }
 
 ul.idiomas .ch {
-  background: url('~@jsroot/images/idiomas.png') -160px 0;
+  background: url('~@/assets/images/idiomas.png') -160px 0;
 }
 
 ul.idiomas .fi {
-  background: url('~@jsroot/images/idiomas.png') -180px 0;
+  background: url('~@/assets/images/idiomas.png') -180px 0;
 }
 
 ul.idiomas .eu {
-  background: url('~@jsroot/images/idiomas.png') -200px 0;
+  background: url('~@/assets/images/idiomas.png') -200px 0;
 }
 
 ul.idiomas .pt {
-  background: url('~@jsroot/images/idiomas.png') -220px 0;
+  background: url('~@/assets/images/idiomas.png') -220px 0;
 }
 
 ul.idiomas .ar {
-  background: url('~@jsroot/images/idiomas.png') -240px 0;
+  background: url('~@/assets/images/idiomas.png') -240px 0;
 }
 
 ul.idiomas .ca {
-  background: url('~@jsroot/images/idiomas.png') -260px 0;
+  background: url('~@/assets/images/idiomas.png') -260px 0;
 }
 
 ul.idiomas .br {
