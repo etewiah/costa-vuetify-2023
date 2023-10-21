@@ -1,5 +1,5 @@
 import axios from 'axios'
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 
 // initial state
 const state = {

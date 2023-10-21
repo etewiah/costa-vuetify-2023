@@ -1,6 +1,6 @@
 // // jan 2019 - replaced by resales store for marbella
 // // only h2m would use it if I activated that option
-// import apiPublicService from "@jsroot/shared/services/api-public"
+// import apiPublicService from "@/services/api-public"
 
 // // initial state
 // const state = {

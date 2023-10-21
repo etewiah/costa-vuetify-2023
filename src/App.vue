@@ -38,9 +38,9 @@
 </template>
 <script>
 // import MainNav from '@jsroot/theme-marbella/components-nav/MainNav'
-// // import PageTopHeader from '@jsroot/shared/components-nav/PageTopHeader'
+// // import PageTopHeader from '@/components-nav/PageTopHeader'
 // // import PageFooter from '@jsroot/theme-marbella/components/PageFooter'
-// import PageNotFound from '@jsroot/shared/components/PageNotFound'
+// import PageNotFound from '@/components/PageNotFound'
 // import ZohoWidget from '@jsroot/theme-marbella/components/ZohoWidget'
 
 export default {

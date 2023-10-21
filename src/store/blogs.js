@@ -1,5 +1,5 @@
 // This calls server endpoint that passes through to wordpress
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 
 // initial state
 const state = {

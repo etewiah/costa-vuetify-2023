@@ -2,7 +2,7 @@
 import axios from 'axios'
 // Nov 2018 need a different store for each pack so below not feasible:
 // import store from "@jsroot/theme-malaga-admin/store"
-// import coreStore from "@jsroot/shared/store/modules/core"
+// import coreStore from "@/store/modules/core"
 // Or I could set " window.store = store" in init and use global object
 // used by:
 // shared-admin/store/modules/pageEdit.js
@@ -43,7 +43,7 @@ export default () => {
         // color: 'red',
         // timeout: 10000
       }
-      app.__vue__.$store.commit('setPageError', { errorObject: errorObject })
+      // app.__vue__.$store.commit('setPageError', { errorObject: errorObject })
       // Unlike setAppWideError, above has to be handled by individual 
       // routes which choose to observe pageError
     }
@@ -74,7 +74,7 @@ export default () => {
         timeout: 10000
       }
       // not entirely sure if below is a good idea:
-      app.__vue__.$store.commit('setAppWideError', { errorObject: errorObject })
+      // app.__vue__.$store.commit('setAppWideError', { errorObject: errorObject })
     }
     // Do something with response error
     return Promise.reject(error);

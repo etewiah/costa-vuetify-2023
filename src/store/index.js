@@ -15,7 +15,7 @@
 //   modules: {
 //   }
 // })
-import apiPublicService from "services/api-public"
+import apiPublicService from "@/services/api-public"
 import Vue from 'vue'
 import Vuex from 'vuex'
 // import axios from 'axios'

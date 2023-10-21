@@ -2,7 +2,7 @@
 // of handy functions.
 // If this turns out to be overkill I might resort to
 // https://stackoverflow.com/questions/35045119/how-can-i-share-a-method-between-components-in-vue-js
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 const state = {
   breadcrumbItems: [],
   // homeText: "Home"

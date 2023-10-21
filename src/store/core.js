@@ -1,6 +1,6 @@
 // June 2019 - might take out the page
 // functionality and move to a dedicated store
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 const state = {
   preRenderedFrag: null,
   showBelowFold: false,

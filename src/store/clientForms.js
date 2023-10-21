@@ -1,5 +1,5 @@
 import axios from 'axios'
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 import { uniqBy } from 'lodash'
 
 // initial state
@@ -201,6 +201,7 @@ const mutations = {
       state.propertyEnquiryErrors = result.errors || []
     }
   },
+  // eslint-disable-next-line no-empty-pattern
   clearPropertyEnquiryStatus: (state, { }) => {
     state.propertyEnquiryErrors = []
     state.propertyEnquirySuccess = ""

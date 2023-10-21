@@ -1,5 +1,5 @@
 // Used for non resales listings such as promotions/developments
-import apiPublicService from "@jsroot/shared/services/api-public"
+import apiPublicService from "@/services/api-public"
 // initial state
 const state = {
   // currentPage: {},
