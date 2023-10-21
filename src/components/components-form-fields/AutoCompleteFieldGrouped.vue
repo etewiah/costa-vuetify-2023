@@ -30,11 +30,11 @@
         </template>
         <template v-else>
           <v-avatar class="ml-1">-</v-avatar>
-          <v-list-tile-content>
-            <v-list-tile-title>
+          <v-list-item-content>
+            <v-list-item-title>
               <div class="pl-1">{{data.item.name}}</div>
-            </v-list-tile-title>
-          </v-list-tile-content>
+            </v-list-item-title>
+          </v-list-item-content>
         </template>
       </template>
     </v-autocomplete>

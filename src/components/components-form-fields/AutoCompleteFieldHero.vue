@@ -53,14 +53,14 @@
       ref="acfh"
     >
       <template v-if="multiple" slot="prepend-item">
-        <v-list-tile ripple @click="activateSelectAll">
-          <v-list-tile-action>
+        <v-list-item ripple @click="activateSelectAll">
+          <v-list-item-action>
             <v-icon>{{ icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>{{ $ft('client_shared.core.selectAll') }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>{{ $ft('client_shared.core.selectAll') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-divider class="mt-2"></v-divider>
       </template>
       <template v-slot:selection="data">
