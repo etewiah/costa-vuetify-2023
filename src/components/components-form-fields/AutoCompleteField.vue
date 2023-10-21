@@ -2,7 +2,7 @@
   <div :class="fieldDetails.fieldName">
     <div class="text-xs-left"></div>
     <v-autocomplete
-      browser-autocomplete="new-password"
+      autocomplete="new-password"
       :dense="false"
       cache-items
       :debounce-search="10"

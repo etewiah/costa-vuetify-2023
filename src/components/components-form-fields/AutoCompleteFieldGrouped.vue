@@ -4,7 +4,7 @@
     <div class="text-xs-left"></div>
     <v-autocomplete
       :dense="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm"
-      browser-autocomplete="new-password"
+      autocomplete="new-password"
       :items="selectItems"
       v-model="localFieldValue"
       :label="$ft(fieldDetails.labelTextTKey)"

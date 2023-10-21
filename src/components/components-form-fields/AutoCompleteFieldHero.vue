@@ -32,7 +32,7 @@
     <v-autocomplete
       v-else
       :dense="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm"
-      browser-autocomplete="new-password"
+      autocomplete="new-password"
       :items="selectItems"
       :filter="filterFunc"
       v-model="localFieldValue"

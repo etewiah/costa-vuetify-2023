@@ -5,7 +5,7 @@
         <div class="text-xs-left pt-3 subheading">{{$ft(fieldDetails.labelTextTKey)}}</div>
       </v-flex>
       <v-flex xs2>
-        <v-btn @click="decrementVal" fab outline small>
+        <v-btn @click="decrementVal" fab outlined small>
           <v-icon style="padding:10px;" light>remove</v-icon>
         </v-btn>
       </v-flex>
@@ -13,7 +13,7 @@
         <div class="text-xs-center pt-2 headline">{{localFieldValue}}</div>
       </v-flex>
       <v-flex xs2>
-        <v-btn @click="incrementVal" fab outline small>
+        <v-btn @click="incrementVal" fab outlined small>
           <v-icon style="padding:10px;" light>add</v-icon>
         </v-btn>
       </v-flex>
