@@ -49,7 +49,7 @@
           class="mr-3 request-callback bg-screen"
         >
           <span class="mr-2 hidden-md-and-down">{{
-            $ft('client_shared.labels.requestCallback')
+            $ft("client_shared.labels.requestCallback")
           }}</span>
           <v-icon class="outlined">phone_iphone</v-icon>
         </v-btn>
@@ -61,7 +61,7 @@
           class="mr-3 request-callback bg-screen"
         >
           <span class="mr-2 hidden-md-and-down">{{
-            $ft('client_shared.labels.favs')
+            $ft("client_shared.labels.favs")
           }}</span>
           <v-icon class="outlined">star</v-icon>
         </v-btn>
@@ -71,9 +71,11 @@
     <div class="container pa-0">
       <v-toolbar class="hidden-md-and-up pt-1 elevation-0">
         <v-menu bottom left>
-          <v-btn icon slot="activator" @click.stop="drawer = !drawer" class>
-            <v-icon>reorder</v-icon>
-          </v-btn>
+          <template v-slot:activator="{ on }">
+            <v-btn icon v-on="on" @click.stop="drawer = !drawer" class>
+              <v-icon>reorder</v-icon>
+            </v-btn>
+          </template>
         </v-menu>
         <v-spacer></v-spacer>
         <v-toolbar-title
@@ -120,10 +122,10 @@
 <script>
 // // import EventReactor from '@jsroot/shared/frames/EventReactor.js'
 // import SignInNav from '@/components/components-nav/SignInNav'
-import MainNavBtnMdUp from '@/components/components-nav/main-nav-level1/BtnMdUp'
-import LangSwitcherDesk from '@/components/components-nav/LangSwitcherDesk'
-import LangSwitcherMobile from '@/components/components-nav/LangSwitcherMobile'
-import MainNavBtnSmDown from '@/components/components-nav/main-nav-level1/BtnSmDown'
+import MainNavBtnMdUp from "@/components/components-nav/main-nav-level1/BtnMdUp"
+import LangSwitcherDesk from "@/components/components-nav/LangSwitcherDesk"
+import LangSwitcherMobile from "@/components/components-nav/LangSwitcherMobile"
+import MainNavBtnSmDown from "@/components/components-nav/main-nav-level1/BtnSmDown"
 // import CallbackFormModal from '@jsroot/shared/components-forms/CallbackFormModal'
 
 export default {
@@ -144,7 +146,7 @@ export default {
     MainNavBtnSmDown,
     LangSwitcherMobile,
   },
-  props: ['navLinks'],
+  props: ["navLinks"],
   methods: {
     onElInteracted(e) {
       this.interacted = true
@@ -195,7 +197,7 @@ export default {
       // }
     },
     isHomePage() {
-      return ['homePage', 'landing'].includes(this.$route.name)
+      return ["homePage", "landing"].includes(this.$route.name)
       // this.$route.name === "homePage"
     },
     // mainClasses() {
@@ -216,7 +218,7 @@ export default {
     //   }
     // },
     homeRoute() {
-      return 'landing'
+      return "landing"
     },
   },
 }
