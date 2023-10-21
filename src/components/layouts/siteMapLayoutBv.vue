@@ -122,7 +122,7 @@ style="display:none" contain aspect-ratio="1" width="175" class="logo-contact"><
 </template>
 <script>
 // import ContentHtml from `@jsroot/shared/components/ContentHtml`
-// import ClientForm from `@jsroot/shared/components-forms/ClientForm`
+// import ClientForm from `@/components/components-forms/ClientForm`
 export default {
   data() {
     return {

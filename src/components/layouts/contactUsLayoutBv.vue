@@ -61,7 +61,7 @@ style="display:none" contain aspect-ratio="1" width="175" class="logo-contact"><
   </v-container>
 </template>
 <script>
-// import ClientForm from '@jsroot/shared/components-forms/ClientForm'
+// import ClientForm from '@/components/components-forms/ClientForm'
 import InmoContactUsForm from '@jsroot/theme-marbella/components-forms/InmoContactUsForm'
 export default {
   components: {

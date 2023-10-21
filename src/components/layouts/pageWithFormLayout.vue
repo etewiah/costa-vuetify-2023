@@ -15,7 +15,7 @@
   </v-container>
 </template>
 <script>
-import ClientForm from '@jsroot/shared/components-forms/ClientForm'
+import ClientForm from '@/components/components-forms/ClientForm'
 export default {
   components: {
     ClientForm,

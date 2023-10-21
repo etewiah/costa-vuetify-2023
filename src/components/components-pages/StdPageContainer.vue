@@ -7,7 +7,7 @@
 </template>
 <script>
 //TODO - figure out some way of only including the correct components:
-// import defaultPageLayout from '@/components/layouts/defaultPageLayout'
+import defaultPageLayout from '@/components/layouts/defaultPageLayout'
 // import pageWithFormLayout from '@/components/layouts/pageWithFormLayout'
 // import contactUsLayoutBv from '@/components/layouts/contactUsLayoutBv'
 // import aboutUsLayoutBv from '@/components/layouts/aboutUsLayoutBv'
@@ -33,7 +33,7 @@ export default {
     // ourServicesLayoutBv,
     // aboutUsLayoutBv,
     // contactUsLayoutBv,
-    // defaultPageLayout,
+    defaultPageLayout,
     // pageWithFormLayout
   },
   // beforeRouteUpdate(to, from, next) {

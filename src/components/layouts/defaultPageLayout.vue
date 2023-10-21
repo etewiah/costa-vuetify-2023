@@ -19,7 +19,7 @@
 // import ContentHtml from '@jsroot/shared/components/ContentHtml'
 // import OurAgency from '@jsroot/shared/components/OurAgency'
 // import PropertiesRow from '@jsroot/theme-vienna/components/PropertiesRow'
-import ClientForm from '@jsroot/shared/components-forms/ClientForm'
+import ClientForm from '@/components/components-forms/ClientForm'
 export default {
   // props: ["currentPageParts", "currentClientForms"],
   components: {
