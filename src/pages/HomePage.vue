@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <HomeHeroCosta
+    <HomeHeroCosta
       :searchFields="searchFields"
       :searchSelectOptions="$store.state.coreStore.pageSearchSelectOptions"
     >
@@ -14,7 +14,7 @@
           details.fieldValue
         }}</span>
       </template>
-    </HomeHeroCosta> -->
+    </HomeHeroCosta>
     <v-container
       :class="['mt-2', 'listings-teaser-cnt']"
       v-if="showMiddlingContent"
@@ -45,13 +45,13 @@
   </div>
 </template>
 <script>
-// import AgencyInfoCosta from '@jsroot/shared/components/AgencyInfoCosta'
-// import ListingsTeaser from '@jsroot/shared/components-pages/home/ListingsTeaser'
+// import AgencyInfoCosta from '@/components/components/AgencyInfoCosta'
+// import ListingsTeaser from '@/components/components-pages/home/ListingsTeaser'
 // import MapSections from '@jsroot/theme-marbella/components/MapSections'
-// import HomeHeroCosta from '@jsroot/shared/components-search/widgets/HomeHeroCosta'
+import HomeHeroCosta from '@/components/components-search/widgets/HomeHeroCosta'
 // // Oct 2023 - below probably never worked
 // // import CategoryBoxesCosta from '@jsroot/theme-marbella/components/CategoryBoxesCosta'
-// import ViewTestimonialsCarousel from '@jsroot/shared/components-slots/ViewTestimonialsCarousel'
+// import ViewTestimonialsCarousel from '@/components/components-slots/ViewTestimonialsCarousel'
 export default {
   metaInfo() {
     var pageTitle =
@@ -66,7 +66,7 @@ export default {
     // ListingsTeaser,
     // ViewTestimonialsCarousel,
     // // CategoryBoxesCosta,
-    // HomeHeroCosta,
+    HomeHeroCosta,
     // MapSections,
   },
   watch: {
