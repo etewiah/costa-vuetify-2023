@@ -156,9 +156,9 @@
 <script>
 import _ from 'lodash'
 // import EventReactor from '@jsroot/shared/frames/EventReactor.js'
-// import PriceSelectHero from '@jsroot/shared/components-form-fields/PriceSelectHero'
-// import AutoCompleteFieldHero from '@jsroot/shared/components-form-fields/AutoCompleteFieldHero'
-// import AutoCompleteFieldHeroGrouped from '@jsroot/shared/components-form-fields/AutoCompleteFieldHeroGrouped'
+// import PriceSelectHero from '@/components/components-form-fields/PriceSelectHero'
+// import AutoCompleteFieldHero from '@/components/components-form-fields/AutoCompleteFieldHero'
+// import AutoCompleteFieldHeroGrouped from '@/components/components-form-fields/AutoCompleteFieldHeroGrouped'
 
 export default {
   components: {

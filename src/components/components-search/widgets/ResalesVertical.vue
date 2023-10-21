@@ -110,7 +110,6 @@
               >
                 <div class="search-features-picker-container">
                   <template
-                    class
                     v-for="(groupInfo, groupIndex) in fieldDetails.groups"
                   >
                     <SWGroupedCheckBoxes
@@ -145,13 +144,13 @@
   </v-card>
 </template>
 <script>
-import PriceSelect from '@jsroot/shared/components-form-fields/PriceSelect'
-import AutoCompleteField from '@jsroot/shared/components-form-fields/AutoCompleteField'
-import DatePickerField from '@jsroot/shared/components-form-fields/DatePickerField'
-import IncrementField from '@jsroot/shared/components-form-fields/SWIncrementField'
-// import SWCountCheckBoxes from '@jsroot/shared/components-form-fields/SWCountCheckBoxes'
-import SWGroupedCheckBoxes from '@jsroot/shared/components-form-fields/SWGroupedCheckBoxes'
-import AutoCompleteFieldGrouped from '@jsroot/shared/components-form-fields/AutoCompleteFieldGrouped'
+import PriceSelect from '@/components/components-form-fields/PriceSelect'
+import AutoCompleteField from '@/components/components-form-fields/AutoCompleteField'
+import DatePickerField from '@/components/components-form-fields/DatePickerField'
+import IncrementField from '@/components/components-form-fields/SWIncrementField'
+// import SWCountCheckBoxes from '@/components/components-form-fields/SWCountCheckBoxes'
+import SWGroupedCheckBoxes from '@/components/components-form-fields/SWGroupedCheckBoxes'
+import AutoCompleteFieldGrouped from '@/components/components-form-fields/AutoCompleteFieldGrouped'
 // import _ from 'lodash'
 export default {
   components: {

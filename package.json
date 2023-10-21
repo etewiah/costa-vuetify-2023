@@ -47,7 +47,8 @@
     },
     "rules": {
       "no-unused-vars": "off",
-      "no-debugger": "off"
+      "no-debugger": "off",
+      "vue/no-mutating-props": "off"
     }
   },
   "browserslist": [
