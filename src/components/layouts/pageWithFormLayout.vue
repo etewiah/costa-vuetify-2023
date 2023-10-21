@@ -8,7 +8,7 @@
       </v-flex>
       <v-flex xs6>
         <template v-for="(clientFormConfig, index) in currentClientForms">
-          <ClientForm :clientFormConfig="clientFormConfig"></ClientForm>
+          <ClientForm :key="index" :clientFormConfig="clientFormConfig"></ClientForm>
         </template>
       </v-flex>
     </v-layout>

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <v-container pt-5 pb-5 grid-list-xl>
     <!-- Development -->

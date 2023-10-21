@@ -9,7 +9,7 @@
       </v-flex>
       <v-flex justify-center xl10 offset-xl1 xs12>
         <template v-for="(clientFormConfig, index) in currentClientForms">
-          <ClientForm :clientFormConfig="clientFormConfig"></ClientForm>
+          <ClientForm :key="index" :clientFormConfig="clientFormConfig"></ClientForm>
         </template>
       </v-flex>
     </v-layout>

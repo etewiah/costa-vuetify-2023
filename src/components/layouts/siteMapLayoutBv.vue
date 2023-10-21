@@ -259,9 +259,9 @@ export default {
     mapLinkDuquesa() {
       return `/${this.$store.state.coreStore.currentLocale}/s/${this.$store.getters.listingPreamble}/?type=1-1,1-2,1-4,1-5,1-6,2-1,2-2,2-4,2-5&city=La%20Duquesa,San%20Luis%20de%20Sabinillas`
     },
-    mapLinkCabopino() {
-      return `/${this.$store.state.coreStore.currentLocale}/s/${this.$store.getters.listingPreamble}/?type=1-1,1-2,1-4,1-5,1-6,2-1,2-2,2-4,2-5&city=Cabopino,Artola,Puerto%20de%20Cabopino`
-    },
+    // mapLinkCabopino() {
+    //   return `/${this.$store.state.coreStore.currentLocale}/s/${this.$store.getters.listingPreamble}/?type=1-1,1-2,1-4,1-5,1-6,2-1,2-2,2-4,2-5&city=Cabopino,Artola,Puerto%20de%20Cabopino`
+    // },
     mapLinkBenahavis() {
       return `/${this.$store.state.coreStore.currentLocale}/s/${this.$store.getters.listingPreamble}/?type=1-1,1-2,1-4,1-5,1-6,2-1,2-2,2-4,2-5&city=La%20Quinta,Benahavis,La%20Heredia,El%20Madronal,La%20Zagaleta,Los%20Arqueros,Los%20Almendros,Los%20Flamingos`
     },

@@ -2,8 +2,8 @@
   <div>
     <ourServicesTemplateBv>
       <template v-for="details in slotDetails" :slot="details.fieldName">
-        <span v-if="details.inputType === 'html'" v-html="details.fieldValue"></span>
-        <span v-else>{{details.fieldValue }}</span>
+        <span :key="details.fieldName" v-if="details.inputType === 'html'" v-html="details.fieldValue"></span>
+        <span :key="details.fieldName" v-else>{{details.fieldValue }}</span>
       </template>
     </ourServicesTemplateBv>
   </div>
