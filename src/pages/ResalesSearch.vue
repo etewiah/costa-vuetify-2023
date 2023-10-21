@@ -54,10 +54,10 @@
 <script>
 import _ from 'lodash'
 // import ResalesSearchResults from '@jsroot/theme-marbella/components-resales/ResalesSearchResults'
-// import ResalesVertical from '@jsroot/shared/components-search/widgets/ResalesVertical'
-// import AlertsForm from '@jsroot/shared/components-forms/AlertsForm'
-import ContentHtml from '@jsroot/shared/components/ContentHtml'
-// import SearchFiltersModal from '@jsroot/shared/components-search/widgets/SearchFiltersModal'
+// import ResalesVertical from '@/components-search/widgets/ResalesVertical'
+// import AlertsForm from '@/components-forms/AlertsForm'
+import ContentHtml from '@/components/general/ContentHtml'
+// import SearchFiltersModal from '@/components-search/widgets/SearchFiltersModal'
 export default {
   metaInfo() {
     var pageTitle =
