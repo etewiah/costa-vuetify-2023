@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Feb 2020 - was originally breadcrumbs but changing to serve as repo
 // of handy functions.
 // If this turns out to be overkill I might resort to

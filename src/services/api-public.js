@@ -9,6 +9,7 @@ import axios from 'axios'
 export default () => {
   const apiPublicService = axios.create({
     // baseURL: `http://api.pearson.com/v2/dictionaries`,
+    baseURL: "https://www.buenavistahomes.eu",
     withCredentials: false,
     headers: {
       'Accept': 'application/json',

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // June 2019 - might take out the page
 // functionality and move to a dedicated store
 import apiPublicService from "@/services/api-public"
