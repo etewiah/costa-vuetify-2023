@@ -5,52 +5,52 @@
     <template v-if="secondLevelItems.length > 0">
       <!-- below was from when I had yet another level of nav for guides -->
       <!--       <v-menu style="width: 100%;" offset-x left open-on-hover>
-        <v-list-tile slot="activator" @click="">
-          <v-list-tile-title>{{ currentNavItem.link_title }}</v-list-tile-title>
-          <v-list-tile-action class="justify-start">
+        <v-list-item slot="activator" @click="">
+          <v-list-item-title>{{ currentNavItem.link_title }}</v-list-item-title>
+          <v-list-item-action class="justify-start">
             <v-icon>play_arrow</v-icon>
-          </v-list-tile-action>
-        </v-list-tile>
+          </v-list-item-action>
+        </v-list-item>
         <v-list dense>
           <template v-for="(item, index) in secondLevelItems" @click="">
            //pageName below should link to link_page_slug 
-            <v-list-tile :key="index" :to="{name: 'guidesPage',
+            <v-list-item :key="index" :to="{name: 'guidesPage',
          params: { locale: $store.state.coreStore.currentLocale, 
          pageName: item.slug,
          area: item.parent_slug}
        }" :exact="item.exact">
-              <v-list-tile-title flat>{{item.link_title}}
-              </v-list-tile-title>
-            </v-list-tile>
+              <v-list-item-title flat>{{item.link_title}}
+              </v-list-item-title>
+            </v-list-item>
           </template>
         </v-list>
       </v-menu> -->
     </template>
     <template v-else>
       <template v-if="currentNavItemToRouteTo.target_path">
-        <v-list-tile
+        <v-list-item
           slot="activator"
           :to="{
             path: currentNavItemToRouteTo.target_path,
           }"
         >
-          <v-list-tile-title>{{
+          <v-list-item-title>{{
             currentNavItemToRouteTo.link_title
-          }}</v-list-tile-title>
-        </v-list-tile>
+          }}</v-list-item-title>
+        </v-list-item>
       </template>
       <template v-else>
-        <v-list-tile
+        <v-list-item
           slot="activator"
           :to="{
             name: currentNavItemToRouteTo.link_route,
             params: currentNavItemToRouteTo.params,
           }"
         >
-          <v-list-tile-title>{{
+          <v-list-item-title>{{
             currentNavItemToRouteTo.link_title
-          }}</v-list-tile-title>
-        </v-list-tile>
+          }}</v-list-item-title>
+        </v-list-item>
       </template>
     </template>
   </div>

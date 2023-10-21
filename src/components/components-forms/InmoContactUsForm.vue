@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mb-5 px-4 py-3" flat color="#FAFAFA">
+  <v-card class="mb-5 px-4 py-3" text color="#FAFAFA">
     <span>
       <!--       {{$ft("client_shared.labels.contactUs") }}
  --> </span>

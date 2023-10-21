@@ -9,7 +9,7 @@
     <v-toolbar
       v-else
       :fixed="topNavFixed"
-      flat
+      text
       class="main-toolbar hidden-sm-and-down"
       :absolute="isHomePage"
       style="background-color: #f7a100"
@@ -45,7 +45,7 @@
         <v-btn
           @click="showCallbackModal"
           style
-          flat
+          text
           class="mr-3 request-callback bg-screen"
         >
           <span class="mr-2 hidden-md-and-down">{{
@@ -57,7 +57,7 @@
           :to="$store.getters.favouritesPage"
           exact-active-class="actual"
           style
-          flat
+          text
           class="mr-3 request-callback bg-screen"
         >
           <span class="mr-2 hidden-md-and-down">{{

@@ -1,7 +1,7 @@
 <template>
   <span>
-    <v-list-tile class="ctd_idio_list_tile">
-      <v-list-tile-title class="ctd_idio_list_tile_title" flat>
+    <v-list-item class="ctd_idio_list_tile">
+      <v-list-item-title class="ctd_idio_list_tile_title" flat>
         <div v-if="dispLangSwitcher" class="contenedor_idiomas">
           <ul class="idiomas idiomas_mobile_menu">
             <template v-if="useLocaleUrls">
@@ -22,8 +22,8 @@
             </template>
           </ul>
         </div>
-      </v-list-tile-title>
-    </v-list-tile>
+      </v-list-item-title>
+    </v-list-item>
     <v-divider></v-divider>
   </span>
 </template>

@@ -2,7 +2,7 @@
 <!-- TO allow passing in reference id to search for listing -->
 <!-- disabling multiple values because they will not work with above -->
 <template>
-  <v-combobox :items="selectItems" :filter="filterFunc" v-model="localFieldValue" :label="$ft(fieldDetails.labelTextTKey)" :hint="$ft(fieldDetails.labelTextTKey)" persistent-hint @change="fieldChangeHandler" item-text="name" :multiple="false" light clearable hide-details solo flat :class="['home-field', hfClass]" height="65">
+  <v-combobox :items="selectItems" :filter="filterFunc" v-model="localFieldValue" :label="$ft(fieldDetails.labelTextTKey)" :hint="$ft(fieldDetails.labelTextTKey)" persistent-hint @change="fieldChangeHandler" item-text="name" :multiple="false" light clearable hide-details solo text :class="['home-field', hfClass]" height="65">
   </v-combobox>
 </template>
 <script>

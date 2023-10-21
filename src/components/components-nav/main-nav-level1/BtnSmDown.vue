@@ -4,10 +4,10 @@
       <MainNavSubBtn1SmDown :currentNavItem="item" :colors="colors" :displaySettings="displaySettings"></MainNavSubBtn1SmDown>
     </template>
     <template v-else>
-      <v-list-tile :key="item.slug" :to="{path: item.link_url}" :exact="item.exact">
-        <v-list-tile-title flat>{{item.link_title}}
-        </v-list-tile-title>
-      </v-list-tile>
+      <v-list-item :key="item.slug" :to="{path: item.link_url}" :exact="item.exact">
+        <v-list-item-title flat>{{item.link_title}}
+        </v-list-item-title>
+      </v-list-item>
     </template>
     <v-divider></v-divider>
   </span>

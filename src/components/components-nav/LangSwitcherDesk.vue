@@ -1,15 +1,15 @@
 <template>
   <v-menu v-if="dispLangSwitcher" open-on-hover close-delay="100" class="dd-idiomas" offset-y>
-    <v-btn slot="activator" outline small class="language-button">
+    <v-btn slot="activator" outlined small class="language-button">
       <v-avatar size="25" class="mr-1">
         <img :src="currentLocaleDetails.icon" alt="US FLAG" />
       </v-avatar>
-      <span class="ma-0" outline>{{currentLocaleDetails.shortLocale}}</span>
+      <span class="ma-0" outlined>{{currentLocaleDetails.shortLocale}}</span>
       <v-icon class="ma-0" right>expand_more</v-icon>
     </v-btn>
     <v-list v-if="useLocaleUrls">
-      <v-list-tile v-for="(locale, index) in expLocales" :key="index" class="locale-option">
-        <v-list-tile-title class="dd-idiomas-title">
+      <v-list-item v-for="(locale, index) in expLocales" :key="index" class="locale-option">
+        <v-list-item-title class="dd-idiomas-title">
           <a
             @click="switchLocaleAndRoute(locale, localeUrls[locale.shortLocale])"
             :class="[locale.variant, locale.selected]"
@@ -19,16 +19,16 @@
             </v-avatar>
             {{locale.text}}
           </a>
-        </v-list-tile-title>
-      </v-list-tile>
+        </v-list-item-title>
+      </v-list-item>
     </v-list>
     <v-list v-else>
-      <v-list-tile
+      <v-list-item
         v-for="(locale, index) in expLocales"
         :key="index"
         @click="switchLocaleAndRoute(locale)"
       >
-        <v-list-tile-title class="dd-idiomas-title">
+        <v-list-item-title class="dd-idiomas-title">
           <span  :class="[locale.variant, locale.selected]">
             <v-avatar size="25" class="mr-1">
               <img :src="locale.icon" alt="Language FLAG" />
@@ -38,8 +38,8 @@
             {{locale.shortLocale}}
             -->
           </span>
-        </v-list-tile-title>
-      </v-list-tile>
+        </v-list-item-title>
+      </v-list-item>
     </v-list>
   </v-menu>
 </template>
