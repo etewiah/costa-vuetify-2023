@@ -8,6 +8,9 @@ import i18n from './i18n'
 
 Vue.config.productionTip = false
 
+import FastI18n from '@/plugins/FastI18n'
+Vue.use(FastI18n)
+
 new Vue({
   vuetify,
   store,
