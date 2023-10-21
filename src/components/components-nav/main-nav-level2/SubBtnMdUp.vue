@@ -8,7 +8,7 @@
       </span>
       </div>
       <v-list>
-        <template v-for="(item, index) in firstSubLevelItems" @click="" v-if="true">
+        <template v-for="(item, index) in firstSubLevelItems" >
           <MainNavSubBtn :key="index" :subMenuItems="subMenuItems" :currentNavItem="item" :colors="colors" divClass=""></MainNavSubBtn>
         </template>
       </v-list>
@@ -43,7 +43,9 @@ export default {
         var routeMatchKey = this.$route
       }
       if (isActive) {
-        this.currentNavItemClass = "router-link-active"
+        // this.currentNavItemClass = "router-link-active"
+        // Oct 2023 - took out above because of:
+        // no-side-effects-in-computed-properties
         colors.backgroundColor = this.$vuetify.theme.secondary
         colors.color = "white"
       }

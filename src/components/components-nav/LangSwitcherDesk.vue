@@ -29,7 +29,7 @@
         @click="switchLocaleAndRoute(locale)"
       >
         <v-list-tile-title class="dd-idiomas-title">
-          <span @click :class="[locale.variant, locale.selected]">
+          <span  :class="[locale.variant, locale.selected]">
             <v-avatar size="25" class="mr-1">
               <img :src="locale.icon" alt="Language FLAG" />
             </v-avatar>

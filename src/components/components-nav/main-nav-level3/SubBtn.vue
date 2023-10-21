@@ -1,8 +1,10 @@
+<!-- eslint-disable vue/no-side-effects-in-computed-properties -->
+<!-- eslint-disable vue/no-side-effects-in-computed-properties -->
 <template>
   <div :class="divClass">
     <template v-if="secondLevelItems.length > 0">
       <!-- below was from when I had yet another level of nav for guides -->
-<!--       <v-menu style="width: 100%;" offset-x left open-on-hover>
+      <!--       <v-menu style="width: 100%;" offset-x left open-on-hover>
         <v-list-tile slot="activator" @click="">
           <v-list-tile-title>{{ currentNavItem.link_title }}</v-list-tile-title>
           <v-list-tile-action class="justify-start">
@@ -26,18 +28,28 @@
     </template>
     <template v-else>
       <template v-if="currentNavItemToRouteTo.target_path">
-        <v-list-tile slot="activator" :to="{
-              path: currentNavItemToRouteTo.target_path
-            }">
-          <v-list-tile-title>{{ currentNavItemToRouteTo.link_title }}</v-list-tile-title>
+        <v-list-tile
+          slot="activator"
+          :to="{
+            path: currentNavItemToRouteTo.target_path,
+          }"
+        >
+          <v-list-tile-title>{{
+            currentNavItemToRouteTo.link_title
+          }}</v-list-tile-title>
         </v-list-tile>
       </template>
       <template v-else>
-        <v-list-tile slot="activator" :to="{
-              name: currentNavItemToRouteTo.link_route,
-              params: currentNavItemToRouteTo.params
-            }">
-          <v-list-tile-title>{{ currentNavItemToRouteTo.link_title }}</v-list-tile-title>
+        <v-list-tile
+          slot="activator"
+          :to="{
+            name: currentNavItemToRouteTo.link_route,
+            params: currentNavItemToRouteTo.params,
+          }"
+        >
+          <v-list-tile-title>{{
+            currentNavItemToRouteTo.link_title
+          }}</v-list-tile-title>
         </v-list-tile>
       </template>
     </template>
@@ -55,21 +67,25 @@ export default {
       if (this.currentNavItem.link_route === "shortTermRentalByCity") {
         var params = {
           preamble: preamble,
-          city: this.currentNavItem.link_route_params
+          city: this.currentNavItem.link_route_params,
         }
-        this.currentNavItem.params = params
-      } else {
-        this.currentNavItem.params = {
-          preamble: preamble
-        }
+        // this.currentNavItem.params = params
       }
-      this.currentNavItem.params.locale = this.$store.state.coreStore.currentLocale
+      // Oct 2023 - took out above and below because of:
+      // no-side-effects-in-computed-properties
+
+      // else {
+      //   this.currentNavItem.params = {
+      //     preamble: preamble
+      //   }
+      // }
+      // this.currentNavItem.params.locale = this.$store.state.coreStore.currentLocale
       return this.currentNavItem
     },
     secondLevelItems() {
       var secondLevelItems = []
       var that = this
-      this.subMenuItems.forEach(function(subMenuItem) {
+      this.subMenuItems.forEach(function (subMenuItem) {
         if (subMenuItem.parent_slug === that.currentNavItem.slug) {
           // TODO - have some logic here that calculates name and params
           // to route to instead of having it hardcoded..
@@ -77,9 +93,8 @@ export default {
         }
       })
       return secondLevelItems
-    }
-  }
+    },
+  },
 }
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -34,7 +34,7 @@ export default {
       if (this.$route.path === this.item.link_url) {
         colors.backgroundColor = this.$vuetify.theme.secondary
         colors.color = "white"
-      } else {}
+      }
       return colors
     }
   }
