@@ -7,7 +7,7 @@
   >
     <v-layout row wrap class="wide-property-layout">
       <v-flex xl6 lg6 md12 sm12 xs12 pa-0>
-        <v-card flat>
+        <v-card text>
           <v-carousel
             v-if="useCarousel"
             hide-delimiters
@@ -42,7 +42,7 @@
           fill-height
           class="wide-property-layout inner-playout"
         >
-          <v-card flat class="wide-property-inner-card">
+          <v-card text class="wide-property-inner-card">
             <v-card-title primary-title class="dv-headline d-inline-block">
               <a tag="div" :href="resolvedHref">
                 <h3 class="dv-title d-inline-block">
@@ -65,7 +65,7 @@
               </div>
             </v-card-text>
           </v-card>
-          <v-card flat class="wide-property-inner-card">
+          <v-card text class="wide-property-inner-card">
             <v-card-actions class="property-icons">
               <div v-if="property.Bedrooms" class="dv-details dv-left">
                 <v-icon class="mr-1">hotel</v-icon>
@@ -94,15 +94,15 @@
               </div>
             </v-card-actions>
           </v-card>
-          <v-card flat class="wide-property-inner-card">
+          <v-card text class="wide-property-inner-card">
             <v-card-actions class="dv-row-bottom inmo-card bottom-details">
-              <v-btn flat class="dv-details dv-left">
+              <v-btn text class="dv-details dv-left">
                 <v-icon class="mr-1" color="#F7A100">place</v-icon>
                 {{ property.Location }}
               </v-btn>
               <v-spacer></v-spacer>
               <a tag="div" :href="resolvedHref">
-                <v-btn flat class="dv-details dv-right">
+                <v-btn text class="dv-details dv-right">
                   <v-icon class="mr-1">chevron_right</v-icon>
                   {{ $ft('client_shared.labels.details') }}
                 </v-btn>

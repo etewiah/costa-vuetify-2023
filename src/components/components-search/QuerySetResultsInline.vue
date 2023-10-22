@@ -7,7 +7,7 @@
           {{ resultSet ? resultSet.title : "" }}
         </span>
       </v-flex>
-      <!-- <swiper @touchStart="resalesSliderActivated" v-if="showResalesPrerenderRows" class="pb-1" :options="swiperOptionsResales" ref="swiperResales">
+      <swiper @touchStart="resalesSliderActivated" v-if="showResalesPrerenderRows" class="pb-1" :options="swiperOptionsResales" ref="swiperResales">
         <swiper-slide v-for="(slideHtml, index) in preRenderedSlides" :key="index">
           <div v-html="slideHtml.innerHTML"></div>
         </swiper-slide>
@@ -27,7 +27,7 @@
         </swiper-slide>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
-      </swiper> -->
+      </swiper>
     </v-layout>
   </v-container>
 </template>
@@ -35,15 +35,15 @@
 import ResalesRowItem from '@/components/components-resales/ResalesRowItemCosta'
 // import ResalesRowItem from '@/components/components-resales/ResalesRowItem'
 import PromotionsRowItemMedium from '@/components/components-prop/PromotionsRowItemMedium'
-// import 'swiper/dist/css/swiper.css'
-// import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 // import RentalPropertiesRowItem from '@/components/components-prop/RentalPropertiesRowItem'
 export default {
   components: {
-    // swiper,
-    // swiperSlide,
-    // ResalesRowItem,
-    // PromotionsRowItemMedium
+    swiper,
+    swiperSlide,
+    ResalesRowItem,
+    PromotionsRowItemMedium
     // RentalPropertiesRowItem
   },
   props: ["resultSet"],

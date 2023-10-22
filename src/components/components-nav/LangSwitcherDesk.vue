@@ -95,7 +95,8 @@ export default {
       var iconPath =
         "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/flags/4x3/"
       var localeDetails = {
-        icon: "/assets/images/gb.png",
+        icon: "https://www.buenavistahomes.eu/assets/images/gb.png",
+        // icon: "/assets/images/gb.png",
       }
       // if (this.$store.state.coreStore.currentLocale === 'es') {
       //   localeDetails = {
