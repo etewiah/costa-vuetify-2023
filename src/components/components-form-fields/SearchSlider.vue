@@ -16,7 +16,7 @@
 <script>
 import vueSlider from 'vue-slider-component'
 // import PriceWithCurrency from '@jsroot/theme-vienna/components/PriceWithCurrency'
-import DisplayPriceLegacy from '@jsroot/shared/components/DisplayPriceLegacy'
+import DisplayPriceLegacy from '@/components/general/DisplayPriceLegacy'
 export default {
   components: {
     vueSlider,

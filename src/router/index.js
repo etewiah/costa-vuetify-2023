@@ -50,10 +50,10 @@ const ResalesSearch = () =>
   import(
     /* webpackChunkName: "route-resalesSearch" */ '../pages/ResalesSearch'
   )
-// const ResalesDetails = () =>
-//   import(
-//     /* webpackChunkName: "route-resalesDetails" */ '../pages/ResalesDetails'
-//   )
+const ResalesDetails = () =>
+  import(
+    /* webpackChunkName: "route-resalesDetails" */ '../pages/ResalesDetails'
+  )
 // const PromotionsSearch = () =>
 //   import(
 //     /* webpackChunkName: "route-promotionsSearch" */ '../pages/PromotionsSearch'

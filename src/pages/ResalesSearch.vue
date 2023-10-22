@@ -53,7 +53,7 @@
 </template>
 <script>
 import _ from 'lodash'
-// import ResalesSearchResults from '@jsroot/theme-marbella/components-resales/ResalesSearchResults'
+// import ResalesSearchResults from '@/components/components-resales/ResalesSearchResults'
 import ResalesVertical from '@/components/components-search/widgets/ResalesVertical'
 // import AlertsForm from '@/components-forms/AlertsForm'
 import ContentHtml from '@/components/general/ContentHtml'
