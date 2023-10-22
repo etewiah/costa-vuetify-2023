@@ -1,6 +1,6 @@
 <!-- TODO - unset current property when navigating away.... -->
 <template>
-  <v-content class="mt-0 pt-0">
+  <v-main class="mt-0 pt-0">
     <DetailsContainer
       v-if="propertyIsVisible"
       :similarProps="similarProps"
@@ -13,7 +13,7 @@
         <h1 class="display-1 my-3">{{ $ft('client.propNotPublished') }}</h1>
       </v-card-title>
     </v-card>
-  </v-content>
+  </v-main>
 </template>
 <script>
 import DetailsContainer from '@/components/components-resales/ResalesDetailsContainerCosta'

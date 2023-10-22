@@ -330,14 +330,14 @@
   </div>
 </template>
 <script>
-// import MapIframe from '@jsroot/shared/components/MapIframe'
+// import MapIframe from '@/components/components/MapIframe'
 // import PropertySharedLinks from '@jsroot/theme-marbella/components-prop/PropertySharedLinks'
 import ListingDetailsTable from '@/components/components-resales/ListingDetailsTable'
 import DisplayResalesPrice from '@/components/general/DisplayResalesPrice'
 import SimilarPropsResults from '@/components/components-resales/SimilarPropsResultsCostaVertical'
-import WideEnquiryForm from '@jsroot/theme-marbella/components-forms/InmoWideEnquiryForm'
-import NarrowEnquiryForm from '@jsroot/theme-marbella/components-forms/InmoNarrowEnquiryForm'
-import MoreInfoModal from '@jsroot/shared/components-forms/MoreInfoModal'
+import WideEnquiryForm from '@/components/components-forms/InmoWideEnquiryForm'
+import NarrowEnquiryForm from '@/components/components-forms/InmoNarrowEnquiryForm'
+import MoreInfoModal from '@/components/components-forms/MoreInfoModal'
 
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
@@ -409,7 +409,8 @@ export default {
         const swiperTop = this.$refs.swiperTop.swiper
         // swiperTop.update()
         // swiperThumbs.update()
-        swiperTop.controller.control = swiperThumbs
+        // Oct 2023 - added "this." below
+        swiperTop.controller.control = this.swiperThumbs
         this.swiperThumbs.controller.control = swiperTop
       }
     },

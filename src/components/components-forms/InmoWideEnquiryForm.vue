@@ -72,8 +72,8 @@
             </span>
           </v-checkbox>
           <p v-if="propertyEnquiryErrors.length">
-            <template v-for="error in propertyEnquiryErrors">
-              <v-alert outline color="error" icon="warning" :value="true">
+            <template v-for="(error,index) in propertyEnquiryErrors">
+              <v-alert :key="index" outline color="error" icon="warning" :value="true">
                 {{ error }}
               </v-alert>
             </template>

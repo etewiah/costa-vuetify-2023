@@ -731,6 +731,15 @@ footer.v-footer.pt-0.theme--light
   padding: 0 !important;
 }
 
+/* Oct 2023 - duplicating above for v-main */
+.application--wrap
+  main.v-main
+  .v-main__wrap
+  .container.pb-0.pl-0.pr-0.pt-0.elevation-0.fluid
+  main.v-main {
+  padding: 0 !important;
+}
+
 h4.dv-price.d-inline-block {
   font-family: catamaran;
   color: #5a5a5a;

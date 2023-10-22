@@ -29,7 +29,7 @@
   </div>
 </template>
 <script>
-import InfoBoxContactUsForm from '@jsroot/theme-marbella/components-forms/InfoBoxContactUsForm'
+import InfoBoxContactUsForm from '@/components/components-forms/InfoBoxContactUsForm'
 export default {
   components: { InfoBoxContactUsForm },
   props: {

@@ -212,17 +212,17 @@ const router = new Router({
     //     ]
     //   }
     // },
-    // {
-    //   path: '/:locale(en|es|nl|fr|it)/s/:preamble/:slugOrId',
-    //   name: 'resalesDetails',
-    //   component: ResalesDetails,
-    //   meta: {
-    //     breadcrumbKeys: [
-    //       'location'
-    //       // ,'proptype'
-    //     ]
-    //   }
-    // },
+    {
+      path: '/:locale(en|es|nl|fr|it)/s/:preamble/:slugOrId',
+      name: 'resalesDetails',
+      component: ResalesDetails,
+      meta: {
+        breadcrumbKeys: [
+          'location'
+          // ,'proptype'
+        ]
+      }
+    },
     // {
     //   path: '/:locale(en|es|nl|fr|it)/a/:preamble/:slugOrId',
     //   name: 'resalesRentalDetails',

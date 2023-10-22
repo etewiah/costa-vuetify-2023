@@ -1,3 +1,4 @@
+<!-- eslint-disable no-extra-boolean-cast -->
 <!-- works with older browsers
 - Might merge later with DisplayPriceLegacy -->
 <template>
@@ -36,7 +37,7 @@ export default {
   props: ["value", "sourceCurrency", "displayCurrency", "noCents", "symbolLast"],
   computed: {
     valueToDisplay() {
-      if (!!!this.value) {
+      if (!this.value) {
         if (this.$store.state.coreStore.currentLocale === "en") {
           return "Unknown"
         } else {
@@ -53,7 +54,7 @@ export default {
     },
     currencyToDisplay() {
       var currencyToDisplay = this.displayCurrency || this.$store.state.coreStore.displayCurrency
-      if (!!!this.value) {
+      if (!this.value) {
         return ""
       } else {
         return currencyToDisplay.toUpperCase()
