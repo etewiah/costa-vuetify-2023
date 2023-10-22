@@ -21,8 +21,11 @@
     >
       <ListingsTeaser></ListingsTeaser>
     </v-container>
-    <v-container class="mt-1 mb-2 map-sections-cnt" v-if="$vuetify.breakpoint.mdAndUp">
-      <!-- <MapSections :currentPage="$store.state.coreStore.currentPage"></MapSections> -->
+    <v-container
+      class="mt-1 mb-2 map-sections-cnt"
+      v-if="$vuetify.breakpoint.mdAndUp"
+    >
+      <MapSections :currentPage="$store.state.coreStore.currentPage"></MapSections>
     </v-container>
     <!-- <v-container
       class="mt-5 cat-boxes-cnt"
@@ -36,23 +39,23 @@
       v-if="showBottomContent"
       grid-list-xl
     >
-      <!-- <ViewTestimonialsCarousel
+      <ViewTestimonialsCarousel
         :currentPage="$store.state.coreStore.currentPage"
       >
       </ViewTestimonialsCarousel>
-       -->
+
       <AgencyInfoCosta></AgencyInfoCosta>
     </v-container>
   </div>
 </template>
 <script>
-import AgencyInfoCosta from '@/components/general/AgencyInfoCosta'
-import ListingsTeaser from '@/components/components-pages/home/ListingsTeaser'
-// import MapSections from '@jsroot/theme-marbella/components/MapSections'
-import HomeHeroCosta from '@/components/components-search/widgets/HomeHeroCosta'
+import AgencyInfoCosta from "@/components/general/AgencyInfoCosta"
+import ListingsTeaser from "@/components/components-pages/home/ListingsTeaser"
+import MapSections from '@/components/extra/MapSections'
+import HomeHeroCosta from "@/components/components-search/widgets/HomeHeroCosta"
 // // Oct 2023 - below probably never worked
-// // import CategoryBoxesCosta from '@jsroot/theme-marbella/components/CategoryBoxesCosta'
-// import ViewTestimonialsCarousel from '@/components/components-slots/ViewTestimonialsCarousel'
+// // import CategoryBoxesCosta from '@/components/CategoryBoxesCosta'
+import ViewTestimonialsCarousel from '@/components/components-slots/ViewTestimonialsCarousel'
 export default {
   metaInfo() {
     var pageTitle =
@@ -65,10 +68,10 @@ export default {
   components: {
     AgencyInfoCosta,
     ListingsTeaser,
-    // ViewTestimonialsCarousel,
+    ViewTestimonialsCarousel,
     // // CategoryBoxesCosta,
     HomeHeroCosta,
-    // MapSections,
+    MapSections,
   },
   watch: {
     $route: {
@@ -77,11 +80,11 @@ export default {
         //   slug: "home",
         //   props_filter: "highlighted_rent_daily"
         // }
-        this.$store.dispatch('loadStdPage', 'home')
+        this.$store.dispatch("loadStdPage", "home")
         this.$nextTick(function () {
-          this.$store.dispatch('loadResalesQueryResults', 'home')
+          this.$store.dispatch("loadResalesQueryResults", "home")
         })
-        this.$store.commit('setPropCrumbs', {
+        this.$store.commit("setPropCrumbs", {
           extraCrumbs: [],
           locale: this.$store.state.coreStore.currentLocale,
         })
@@ -98,7 +101,7 @@ export default {
   computed: {
     showBottomContent() {
       return true
-      // Oct 2023 - this was a performance hack I can renable again 
+      // Oct 2023 - this was a performance hack I can renable again
       // some other time
       // previously called showBelowFoldForAll
       // return this.$store.state.coreStore.showBelowFold
@@ -124,9 +127,8 @@ export default {
     },
     slotDetails() {
       let activeLocale = this.$store.state.coreStore.currentLocale
-      let slotValuesAll = this.$store.getters.allViewSlotsForLocale(
-        activeLocale
-      )
+      let slotValuesAll =
+        this.$store.getters.allViewSlotsForLocale(activeLocale)
       let currentPageSlots = this.$store.state.coreStore.currentPageSlots
       currentPageSlots.forEach(function (slotConfigField) {
         // slotConfigFields are hard coded on the server with info about how to render etc
