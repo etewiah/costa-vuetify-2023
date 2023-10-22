@@ -40,12 +40,13 @@
         :currentPage="$store.state.coreStore.currentPage"
       >
       </ViewTestimonialsCarousel>
-      <AgencyInfoCosta></AgencyInfoCosta> -->
+       -->
+      <AgencyInfoCosta></AgencyInfoCosta>
     </v-container>
   </div>
 </template>
 <script>
-// import AgencyInfoCosta from '@/components/components/AgencyInfoCosta'
+import AgencyInfoCosta from '@/components/general/AgencyInfoCosta'
 import ListingsTeaser from '@/components/components-pages/home/ListingsTeaser'
 // import MapSections from '@jsroot/theme-marbella/components/MapSections'
 import HomeHeroCosta from '@/components/components-search/widgets/HomeHeroCosta'
@@ -62,7 +63,7 @@ export default {
     }
   },
   components: {
-    // AgencyInfoCosta,
+    AgencyInfoCosta,
     ListingsTeaser,
     // ViewTestimonialsCarousel,
     // // CategoryBoxesCosta,
@@ -96,8 +97,11 @@ export default {
   },
   computed: {
     showBottomContent() {
+      return true
+      // Oct 2023 - this was a performance hack I can renable again 
+      // some other time
       // previously called showBelowFoldForAll
-      return this.$store.state.coreStore.showBelowFold
+      // return this.$store.state.coreStore.showBelowFold
     },
     showMiddlingContent() {
       // isMobileAndShowBelowFoldTriggeredOrIsDesktop

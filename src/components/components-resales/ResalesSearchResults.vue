@@ -25,14 +25,14 @@
               class=""
               @click="changeSort('3')"
               :color="sortCode === '3' ? 'primary' : ''"
-              flat
+              text
               >{{ $ft('client_shared.fieldLabels.lastUpdated') }}</v-btn
             >
             <v-btn
               class=""
               @click="changeSort('0')"
               :color="sortCode === '0' ? 'primary' : ''"
-              flat
+              text
             >
               {{
                 $vuetify.breakpoint.smAndDown
@@ -45,7 +45,7 @@
               class=""
               @click="changeSort('1')"
               :color="sortCode === '1' ? 'primary' : ''"
-              flat
+              text
             >
               {{
                 $vuetify.breakpoint.smAndDown

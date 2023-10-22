@@ -16,7 +16,7 @@
               :rules="emailField.validationRules"
               :autofocus="false"
               v-model="contactData.email"
-              box
+              filled
               small
               color="#F7A100"
               class="alert-search"
@@ -24,7 +24,7 @@
           </div>
           <div class="alert-box-right">
             <v-btn
-              outline
+              outlined
               type="submit"
               block
               large
@@ -38,7 +38,7 @@
           <v-flex xs12 class="pa-2">
             <v-alert
               v-if="promptTandC"
-              outline
+              outlined
               color="error"
               icon="warning"
               :value="true"
@@ -62,7 +62,7 @@
             <p v-if="alertFormErrors.length">
               <template v-for="(error, index) in alertFormErrors">
                 <v-alert
-                  outline
+                  outlined
                   color="error"
                   :key="index"
                   icon="warning"
@@ -73,7 +73,7 @@
             </p>
             <p v-if="alertFormSuccess.length">
               <v-alert
-                outline
+                outlined
                 color="success"
                 dismissible
                 v-model="successModel"
