@@ -30,7 +30,7 @@ export default {
   props: ["value", "sourceCurrency", "displayCurrency", "noCents","symbolLast"],
   computed: {
     valueToDisplay() {
-      if (!!!this.value) {
+      if (!this.value) {
         return ""
       }
       var valueToDisplay = this.value / 100

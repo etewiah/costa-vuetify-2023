@@ -19,7 +19,7 @@
       :class="['mt-2', 'listings-teaser-cnt']"
       v-if="showMiddlingContent"
     >
-      <!-- <ListingsTeaser></ListingsTeaser> -->
+      <ListingsTeaser></ListingsTeaser>
     </v-container>
     <v-container class="mt-1 mb-2 map-sections-cnt" v-if="$vuetify.breakpoint.mdAndUp">
       <!-- <MapSections :currentPage="$store.state.coreStore.currentPage"></MapSections> -->
@@ -46,7 +46,7 @@
 </template>
 <script>
 // import AgencyInfoCosta from '@/components/components/AgencyInfoCosta'
-// import ListingsTeaser from '@/components/components-pages/home/ListingsTeaser'
+import ListingsTeaser from '@/components/components-pages/home/ListingsTeaser'
 // import MapSections from '@jsroot/theme-marbella/components/MapSections'
 import HomeHeroCosta from '@/components/components-search/widgets/HomeHeroCosta'
 // // Oct 2023 - below probably never worked
@@ -63,7 +63,7 @@ export default {
   },
   components: {
     // AgencyInfoCosta,
-    // ListingsTeaser,
+    ListingsTeaser,
     // ViewTestimonialsCarousel,
     // // CategoryBoxesCosta,
     HomeHeroCosta,
