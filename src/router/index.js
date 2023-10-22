@@ -37,10 +37,10 @@ import HomePage from '../pages/HomePage.vue'
 //   import(
 //     /* webpackChunkName: "route-blogpost" */ '../pages/BlogPostPage'
 //   )
-// const FavouritesIndex = () =>
-//   import(
-//     /* webpackChunkName: "route-favs" */ '@jsroot/theme-marbella/components-visitor/FavouritesIndex'
-//   )
+const FavouritesIndex = () =>
+  import(
+    /* webpackChunkName: "route-favs" */ '@/components/components-visitor/FavouritesIndex'
+  )
 // // const ResalesCitySearch = () => import( /* webpackChunkName: "route-resalesCitySearch" */ '../pages/ResalesCitySearch')
 // const ResalesRentalSearch = () =>
 //   import(
@@ -77,7 +77,7 @@ const StdPageContainer = () =>
 // const SubAreaPage = () => import('@jsroot/shared/components-pages/SubAreaPage')
 
 
-// import store from '@jsroot/theme-marbella/store'
+// import store from '@/components/store'
 Vue.use(Router)
 
 const router = new Router({
@@ -136,11 +136,11 @@ const router = new Router({
     //     }
     //   ]
     // },
-    // {
-    //   path: '/:locale(en|es|nl|fr|it)/favourites',
-    //   name: 'favouritesIndexPage',
-    //   component: FavouritesIndex
-    // },
+    {
+      path: '/:locale(en|es|nl|fr|it)/favourites',
+      name: 'favouritesIndexPage',
+      component: FavouritesIndex
+    },
     {
       path: '/:locale(en|es|nl|fr|it)/p/:pageName',
       name: 'standardPageDetails',

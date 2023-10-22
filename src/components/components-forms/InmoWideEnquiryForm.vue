@@ -73,13 +73,13 @@
           </v-checkbox>
           <p v-if="propertyEnquiryErrors.length">
             <template v-for="(error,index) in propertyEnquiryErrors">
-              <v-alert :key="index" outline color="error" icon="warning" :value="true">
+              <v-alert :key="index" outlined color="error" icon="warning" :value="true">
                 {{ error }}
               </v-alert>
             </template>
           </p>
           <p v-if="propertyEnquirySuccess.length">
-            <v-alert outline color="success" dismissible v-model="successModel">
+            <v-alert outlined color="success" dismissible v-model="successModel">
               {{ propertyEnquirySuccess }}
             </v-alert>
           </p>

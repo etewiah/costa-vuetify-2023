@@ -54,7 +54,7 @@
       <template v-for="(error, index) in propertyEnquiryErrors">
         <v-alert
           :key="index"
-          outline
+          outlined
           color="error"
           icon="warning"
           :value="true"
@@ -64,7 +64,7 @@
       </template>
     </p>
     <p v-if="propertyEnquirySuccess.length">
-      <v-alert outline color="success" dismissible v-model="successModel">{{
+      <v-alert outlined color="success" dismissible v-model="successModel">{{
         propertyEnquirySuccess
       }}</v-alert>
     </p>

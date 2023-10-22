@@ -4,14 +4,14 @@
       <v-layout row wrap search-container>
         <!-- CHANGED V.3 -->
         <v-flex :class="mainContentClasses">
-          <!-- <ResalesSearchResults
+          <ResalesSearchResults
             :computedSearchParams="computedSearchParams"
             :isLoading="$store.state.resalesStore.loadingSearch"
             :propertiesToDisplay="listingsToDisplay"
             @paginationTrigger="triggerSearchUpdate"
             saleOrRentalCat="sale"
             :queryInfo="$store.getters.getResalesQueryInfo"
-          ></ResalesSearchResults> -->
+          ></ResalesSearchResults>
           <div v-html="$store.state.coreStore.currentPage.raw_html"></div>
         </v-flex>
         <v-flex xl3 md4 sm5 xs12 pr-4 class="sidebar">
@@ -53,7 +53,7 @@
 </template>
 <script>
 import _ from 'lodash'
-// import ResalesSearchResults from '@/components/components-resales/ResalesSearchResults'
+import ResalesSearchResults from '@/components/components-resales/ResalesSearchResults'
 import ResalesVertical from '@/components/components-search/widgets/ResalesVertical'
 // import AlertsForm from '@/components-forms/AlertsForm'
 import ContentHtml from '@/components/general/ContentHtml'
@@ -70,7 +70,7 @@ export default {
   components: {
     // SearchFiltersModal,
     // AlertsForm,
-    // ResalesSearchResults,
+    ResalesSearchResults,
     ResalesVertical,
     ContentHtml,
   },

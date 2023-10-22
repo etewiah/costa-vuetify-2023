@@ -89,7 +89,7 @@
                     <v-icon right dark>star_border</v-icon>
                   </v-btn>
                 </div>
-                <!--              <v-btn @click="addToFavourites" v-if="favouritesEnabled" style="" flat class="mr-3 request-callback bg-screen">
+                <!--              <v-btn @click="addToFavourites" v-if="favouritesEnabled" style="" text class="mr-3 request-callback bg-screen">
                   <v-icon right class="outlined">favorite_border</v-icon>
                 </v-btn>-->
               </v-flex>
@@ -275,18 +275,18 @@
                       </p>
                     </v-card-text>
                     <v-card-actions>
-                      <v-btn outline block large color="#F7A100" dark>
+                      <v-btn outlined block large color="#F7A100" dark>
                         <v-icon>phone</v-icon>
                         <a href="tel:+34 951 484 500">+34 951 484 500</a>
                       </v-btn>
                     </v-card-actions>
                     <v-card-actions>
-                      <v-btn flat small color="#F7A100">{{
+                      <v-btn text small color="#F7A100">{{
                         $ft('client_shared.labels.mailUs')
                       }}</v-btn
                       >|
                       <v-btn
-                        flat
+                        text
                         small
                         color="#F7A100"
                         href="mailto:info@costaspecialist.com"
@@ -323,7 +323,7 @@
           $ft('client_shared.labels.viewFavs')
         }}</router-link>
       </span>
-      <v-btn dark flat @click="noticeSnackbar.isActive = false">
+      <v-btn dark text @click="noticeSnackbar.isActive = false">
         <v-icon>clear</v-icon>
       </v-btn>
     </v-snackbar>
